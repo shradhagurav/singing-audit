@@ -18,16 +18,17 @@ const Payment = () => {
       <section className="flex items-center justify-center">
         <div className="text-center">
           <img className="mx-auto mt-4" src={ticket} alt="Ticket" />
-          <span className=" md:text-sm  block mt-10 bg-red-500 md:bg-green-500 text-xs">Tickets will be send to your email address & WhatsApp shortly</span>
-          <span className="text-sm block mt-1">You may be required to show this tickets to access the event</span>
+          <span className=" md:text-sm  block mt-10 text-xs">Tickets will be send to your email address & WhatsApp shortly</span>
+          <span className="text-xs md:text-sm  block mt-1">You may be required to show this tickets to access the event</span>
         </div>
       </section>
        
       <section className="mt-4">
-            <button className="bg-[#845ADF]  text-white py-2 px-4 rounded mx-auto block">Download Ticket</button>
+            <button className="bg-[#845ADF] md:block hidden  text-white py-2 px-4 rounded mx-auto">Download Ticket</button>
             <Link to="/">
           <button className="text-[#845ADF] font-bold py-2 px-4 rounded mx-auto block mt-2">Back to event details</button>
         </Link>
+        <button className=" whitespace-nowrap bg-[#845ADF] md:hidden block text-white md:px-4 py-2 px-[7.5rem] mt-12 rounded mx-auto text-sm">Download Ticket</button>
           </section>
     </div>
   );
